@@ -17,22 +17,22 @@ import nisharaPhoto from "@/assets/nishara.jpg";
 import asmithaPhoto from "@/assets/asmitha.jpg";
 
 const memberPhotos: Record<string, string> = {
-  "Dr. R. Manickam": manickamPhoto.url,
-  "Dr. S. P. Suriyaraj": suriyarajPhoto.url,
-  "Ms. Swathi": swathiPhoto.url,
-  "Ms. Nagadharshini": nagadharshiniPhoto.url,
-  "Mr. Sivakumaran": sivakumaranPhoto.url,
-  "Ms. Jothi": jothiPhoto.url,
+  "Dr. R. Manickam": manickamPhoto ,
+  "Dr. S. P. Suriyaraj": suriyarajPhoto ,
+  "Ms. Swathi": swathiPhoto ,
+  "Ms. Nagadharshini": nagadharshiniPhoto ,
+  "Mr. Sivakumaran": sivakumaranPhoto ,
+  "Ms. Jothi": jothiPhoto ,
 };
 
 const internPhotos: Record<string, string> = {
-  "Ms. Kiruthika": kiruthikaPhoto.url,
-  "Mr. Akshay Kumaran": akshayPhoto.url,
-  "Ms. Rathnadeepa": rathnadeepaPhoto.url,
-  "Mr. Kameshwaran": kameshwaranPhoto.url,
-  "Mr. Santhosh": santhoshPhoto.url,
-  "Ms. Nishara": nisharaPhoto.url,
-  "Ms. Asmitha": asmithaPhoto.url,
+  "Ms. Kiruthika": kiruthikaPhoto ,
+  "Mr. Akshay Kumaran": akshayPhoto ,
+  "Ms. Rathnadeepa": rathnadeepaPhoto ,
+  "Mr. Kameshwaran": kameshwaranPhoto ,
+  "Mr. Santhosh": santhoshPhoto ,
+  "Ms. Nishara": nisharaPhoto ,
+  "Ms. Asmitha": asmithaPhoto ,
 };
 
 function initials(name: string) {
