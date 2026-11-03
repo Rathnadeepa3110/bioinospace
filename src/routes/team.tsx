@@ -122,20 +122,20 @@ function TeamPage() {
             {researchInterns.map((intern) => (
               <ContentCard
                 key={intern.name}
-                className="flex items-center gap-4 !transition-transform hover:translate-y-0"
+                className="flex items-start gap-5 !transition-transform hover:translate-y-0"
               >
                 {internPhotos[intern.name] ? (
                   <img
                     src={internPhotos[intern.name]}
                     alt={intern.name}
-                    className="h-12 w-12 shrink-0 rounded-full border-2 border-primary/15 object-cover object-top shadow-[var(--shadow-soft)]"
+                    className="h-44 w-36 shrink-0 rounded-xl object-cover object-top shadow-[var(--shadow-soft)]"
                   />
                 ) : (
-                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-secondary text-primary">
-                    <UserRound className="h-5 w-5" aria-hidden />
+                  <span className="flex h-44 w-36 shrink-0 items-center justify-center rounded-xl bg-secondary text-primary">
+                    <UserRound className="h-10 w-10" aria-hidden />
                   </span>
                 )}
-                <h3 className="font-medium text-foreground">{intern.name}</h3>
+                <h3 className="pt-1 font-medium text-foreground">{intern.name}</h3>
               </ContentCard>
             ))}
           </div>
