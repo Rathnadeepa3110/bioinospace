@@ -10,33 +10,115 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as CollaboratorsRouteImport } from './routes/collaborators'
+import { Route as FocusAreasRouteImport } from './routes/focus-areas'
+import { Route as ServicesRouteImport } from './routes/services'
+import { Route as StartupsRouteImport } from './routes/startups'
+import { Route as TeamRouteImport } from './routes/team'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CollaboratorsRoute = CollaboratorsRouteImport.update({
+  id: '/collaborators',
+  path: '/collaborators',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FocusAreasRoute = FocusAreasRouteImport.update({
+  id: '/focus-areas',
+  path: '/focus-areas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesRoute = ServicesRouteImport.update({
+  id: '/services',
+  path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StartupsRoute = StartupsRouteImport.update({
+  id: '/startups',
+  path: '/startups',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TeamRoute = TeamRouteImport.update({
+  id: '/team',
+  path: '/team',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/collaborators': typeof CollaboratorsRoute
+  '/focus-areas': typeof FocusAreasRoute
+  '/services': typeof ServicesRoute
+  '/startups': typeof StartupsRoute
+  '/team': typeof TeamRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/collaborators': typeof CollaboratorsRoute
+  '/focus-areas': typeof FocusAreasRoute
+  '/services': typeof ServicesRoute
+  '/startups': typeof StartupsRoute
+  '/team': typeof TeamRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/collaborators': typeof CollaboratorsRoute
+  '/focus-areas': typeof FocusAreasRoute
+  '/services': typeof ServicesRoute
+  '/startups': typeof StartupsRoute
+  '/team': typeof TeamRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/collaborators'
+    | '/focus-areas'
+    | '/services'
+    | '/startups'
+    | '/team'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/collaborators'
+    | '/focus-areas'
+    | '/services'
+    | '/startups'
+    | '/team'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/collaborators'
+    | '/focus-areas'
+    | '/services'
+    | '/startups'
+    | '/team'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  CollaboratorsRoute: typeof CollaboratorsRoute
+  FocusAreasRoute: typeof FocusAreasRoute
+  ServicesRoute: typeof ServicesRoute
+  StartupsRoute: typeof StartupsRoute
+  TeamRoute: typeof TeamRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +130,59 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/collaborators': {
+      id: '/collaborators'
+      path: '/collaborators'
+      fullPath: '/collaborators'
+      preLoaderRoute: typeof CollaboratorsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/focus-areas': {
+      id: '/focus-areas'
+      path: '/focus-areas'
+      fullPath: '/focus-areas'
+      preLoaderRoute: typeof FocusAreasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services': {
+      id: '/services'
+      path: '/services'
+      fullPath: '/services'
+      preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/startups': {
+      id: '/startups'
+      path: '/startups'
+      fullPath: '/startups'
+      preLoaderRoute: typeof StartupsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/team': {
+      id: '/team'
+      path: '/team'
+      fullPath: '/team'
+      preLoaderRoute: typeof TeamRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  CollaboratorsRoute: CollaboratorsRoute,
+  FocusAreasRoute: FocusAreasRoute,
+  ServicesRoute: ServicesRoute,
+  StartupsRoute: StartupsRoute,
+  TeamRoute: TeamRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
