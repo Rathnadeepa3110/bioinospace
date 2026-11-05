@@ -51,7 +51,7 @@ function TeamPage() {
           <h2 className="text-2xl font-semibold text-foreground md:text-3xl">Core team</h2>
           <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {team.map((member) =>
-              ["Dr. R. Manickam", "Dr. J. P. Ananth", "Mr. Ramkumar"].includes(member.name) ? (
+              ["Dr. R. Manickam", "Mr. Ramkumar"].includes(member.name) ? (
                 <ContentCard
                   key={member.name}
                   className="flex flex-col items-center text-center !transition-transform hover:translate-y-0"

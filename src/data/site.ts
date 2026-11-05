@@ -22,7 +22,15 @@ export const team = [
       "Dr. Manickam Ramasamy, Chief Executive Officer and Secretary of Rathinam Group of Institutions, Coimbatore, is a seasoned education leader with over 22 years of expertise in higher education and strategic development. He has spearheaded the establishment of new institutions in diverse fields, launched industry-aligned programs, and enhanced student employability. A dedicated academician and researcher, he continues to drive Rathinam's growth, brand expansion, and global recognition by blending academic rigor with innovation and collaboration.",
     ],
   },
-  { name: "Dr. J. P. Ananth", role: "Pro Vice Chancellor" },
+  {
+    name: "Dr. J. P. Ananth",
+    role: "Vice Chancellor",
+    bio: [
+      "Dr. Ananth J. P. is an accomplished academic leader with over two decades of experience in higher education, academic administration, research, and institutional development. He has held various academic and leadership responsibilities, contributing to educational excellence, research advancement, and institutional growth.",
+      "His academic and research interests include emerging technologies, artificial intelligence, machine learning, computational research, and interdisciplinary innovation. With his extensive academic experience and leadership perspective, he brings valuable guidance towards strengthening research, innovation, and entrepreneurship at Bio Innospace.",
+      "As Vice Chancellor, he provides strategic leadership and supports the vision of building a collaborative ecosystem that connects academic research, technological innovation, and industry-oriented development.",
+    ],
+  },
   { name: "Mr. Ramkumar", role: "Chief Executive Officer" },
   {
     name: "Dr. S. P. Suriyaraj",
