@@ -22,6 +22,8 @@ export const team = [
       "Dr. Manickam Ramasamy, Chief Executive Officer and Secretary of Rathinam Group of Institutions, Coimbatore, is a seasoned education leader with over 22 years of expertise in higher education and strategic development. He has spearheaded the establishment of new institutions in diverse fields, launched industry-aligned programs, and enhanced student employability. A dedicated academician and researcher, he continues to drive Rathinam's growth, brand expansion, and global recognition by blending academic rigor with innovation and collaboration.",
     ],
   },
+  { name: "Dr. J. P. Ananth", role: "Pro Vice Chancellor" },
+  { name: "Mr. Ramkumar", role: "Chief Executive Officer" },
   {
     name: "Dr. S. P. Suriyaraj",
     role: "Dean - School of Applied Biosciences, Rathinam Global Deemed to be University",
@@ -32,7 +34,6 @@ export const team = [
       "Passionate about fostering technology startups and nurturing budding entrepreneurs, Dr. Suriyaraj continues to make significant contributions to the field of nanobiotechnology.",
     ],
   },
-  { name: "Ms. Swathi", role: "Project Manager" },
   { name: "Ms. Nagadharshini", role: "Junior Scientist" },
   { name: "Mr. Sivakumaran", role: "Technical Assistant" },
   { name: "Ms. Jothi", role: "Finance and Accounts" },
